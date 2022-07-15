@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* font-size: calc(0.12rem + 1vw); */
+}
+
+body {
+  background-color: hsl(222, 26%, 31%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "League Spartan", sans-serif;
+  height: 100vh;
+}
+
+body.second {
+  background-color: hsl(0, 0%, 90%);
+}
+
+body.third {
+  background-color: hsl(268, 75%, 9%);
+  color: hsl(52, 100%, 62%);
+}
+
+.calculator-section {
+  width: 33%;
+}
+
+.head {
+  display: flex;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.head.second {
+  color: hsl(60, 10%, 19%);
+}
+
+.head.third {
+  color: hsl(52, 100%, 62%);
+}
+
+#calc {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-top: 0.2rem;
+}
+
+#theme {
+  margin-left: auto;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+.toggle-section {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.7rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.number-options {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+  font-size: 0.2rem;
+}
+
+#one{
+  font-size: 0.7rem;
+}
+#two{
+  font-size: 0.7rem;
+}
+#three{
+  font-size: 0.7rem;
+}
+
+
+.toggle-box {
+  height: 1rem;
+  width: 3.125rem;
+  padding: 0.125rem;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 1rem;
+}
+
+.toggle-box.second {
+  background-color: hsl(0, 5%, 81%);
+}
+
+.toggle-box.third {
+  background-color: hsl(268, 71%, 12%);
+}
+
+.ball {
+  height: 0.75rem;
+  width: 0.688rem;
+  padding: 0.063rem;
+  background-color: hsl(6, 63%, 50%);
+  border-radius: 3.8rem;
+  transform: translate(00.125rem);
+}
+
+.ball.first {
+  transform: translate();
+}
+
+.ball.second {
+  transform: translate(1.07rem);
+}
+
+.ball.third {
+  transform: translate(2.063rem);
+  background-color: hsl(176, 100%, 44%);
+}
+.display-section {
+  width: 100%;
+  background-color: hsl(224, 36%, 15%);
+  height: 8vmax ;
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 2rem;
+  /* padding-bottom: 3rem; */
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* .display-section > div{
+  direction: ltr;
+} */
+
+.display-section div{
+  display: inline-block;
+  font-size: 2.5rem;
+  padding-top: 0.2rem;
+
+ 
+}
+
+.display-section.second {
+  background-color: hsl(0, 0%, 93%);
+  color: black;
+}
+
+.display-section.third {
+  background-color: hsl(268, 71%, 12%);
+}
+
+.keys-section {
+  background-color: hsl(223, 31%, 20%);
+  padding: 2rem;
+  border-radius: 0.4rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  gap: 0.6rem;
+  row-gap: 1rem;
+  
+}
+
+.keys-section.second {
+  background-color: hsl(0, 5%, 81%);
+}
+
+.keys-section.third {
+  background-color: hsl(268, 71%, 12%);
+}
+
+button {
+  color: hsl(221, 14%, 31%);
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  font-size: 2rem;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  width: 90%;
+  box-shadow: 0rem 0.2rem 0.1rem hsl(28, 16%, 65%);
+  cursor: pointer;
+}
+
+button.third{
+  color: hsl(52, 100%, 62%);
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: 0rem 0.2rem 0.1rem hsl(285, 91%, 52%);
+}
+
+#deletion {
+  font-size: 1.5rem;
+  color: white;
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0rem 0.2rem 0.1rem hsl(224, 28%, 35%);
+}
+
+#deletion.second {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0rem 0.2rem 0.1rem hsl(185, 58%, 25%);
+}
+
+#deletion.third {
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: 0rem 0.2rem 0.1rem hsl(285, 91%, 52%);
+}
+
+#reset {
+  grid-column: 1 / 3;
+  width: 95%;
+  font-size: 1.5rem;
+  color: white;
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0rem 0.2rem 0.1rem hsl(224, 28%, 35%);
+}
+
+#reset.second {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0rem 0.2rem 0.1rem hsl(185, 58%, 25%);
+}
+
+#reset.third {
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: 0rem 0.2rem 0.1rem hsl(285, 91%, 52%);
+}
+
+#equal {
+  grid-column: 3 / 5;
+  width: 95%;
+  font-size: 1.5rem;
+  color: white;
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0rem 0.2rem 0.1rem hsl(6, 70%, 34%);
+}
+
+#equal.second {
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0rem 0.2rem 0.1rem hsl(25, 99%, 27%);
+}
+
+#equal.third {
+  background-color: hsl(176, 100%, 44%);
+  box-shadow: 0rem 0.2rem 0.1rem hsl(177, 92%, 70%);
+  color:  hsl(198, 20%, 13%);
+}
+
+
+@media screen and (max-width: 768px){
+  body{
+    height: 50%;
+    margin-top: 2rem;
+  }
+
+  .calculator-section{
+    width: 90%;
+  }
+  
+  #theme{
+    font-size: 0.8rem;
+  }
+
+
+  .display-section{
+    height: 10vmax;
+  }
+}
