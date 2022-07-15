@@ -76,14 +76,14 @@ class Calcualtor {
   }
 
   resultDisplay() {
-    this.firstInput.innerText = this.previousValue.toLocaleString();
-    this.secondInput.innerText = this.currentValue.toLocaleString();
+    this.firstInput.innerText = this.previousValue;
+    this.secondInput.innerText = this.currentValue;
   }
 }
 
 //getting the dom of needed parameters
 
-const tate = document.querySelector("#two");
+const tate = document.querySelector("#two"); 
 const one = document.querySelector("#one");
 const three = document.querySelector("#three");
 const entire = document.body;
