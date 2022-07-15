@@ -37,7 +37,6 @@ class Calcualtor {
     switch (operatory) {
       case "+":
         result = previousEntry + currentEntry;
-        // result = result.toLocaleString("en-US");
         result = parseFloat(result)
         this.currentValue = result;
         this.previousValue = "";
@@ -76,14 +75,14 @@ class Calcualtor {
   }
 
   resultDisplay() {
-    this.firstInput.innerText = this.previousValue;
+    this.firstInput.innerText =  this.previousValue;
     this.secondInput.innerText = this.currentValue;
   }
 }
 
 //getting the dom of needed parameters
 
-const tate = document.querySelector("#two"); 
+const two = document.querySelector("#two"); 
 const one = document.querySelector("#one");
 const three = document.querySelector("#three");
 const entire = document.body;
@@ -198,5 +197,5 @@ const next = () => {
 };
 
 one.addEventListener("click", neutral);
-tate.addEventListener("click", change);
+two.addEventListener("click", change);
 three.addEventListener("click", next);
