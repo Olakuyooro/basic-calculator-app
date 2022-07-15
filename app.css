@@ -270,4 +270,9 @@ button.third{
   .display-section{
     height: 10vmax;
   }
+
+  #deletion{
+    font-size: 1.3rem;
+  }
+
 }
